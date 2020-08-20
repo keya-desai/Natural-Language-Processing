@@ -1,6 +1,6 @@
 # Natural-Language-Processing
 
-Coursework for "Natural Language Processing"  
+Coursework for CS533 : Natural Language Processing
 
 ### Assignments:  
 Assignment 1 - n-gram models  
