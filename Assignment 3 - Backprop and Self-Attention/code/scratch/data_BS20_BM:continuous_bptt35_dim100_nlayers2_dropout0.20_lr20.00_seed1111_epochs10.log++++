@@ -1,0 +1,10 @@
+main.py --train
+
+Building data from ./data...
+      batch_size: 20
+batch_size_valid: 1
+    batch_method: continuous   
+          device: cpu
+  is_conditional: False
+
+train.txt: 319 x 20 (1 words trimmed)

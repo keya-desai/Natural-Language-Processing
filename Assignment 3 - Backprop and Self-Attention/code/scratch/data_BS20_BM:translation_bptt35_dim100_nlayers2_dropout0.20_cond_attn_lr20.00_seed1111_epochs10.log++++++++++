@@ -1,0 +1,56 @@
+main.py --train --cond --batch_method translation --attn
+
+Building data from ./data...
+      batch_size: 20
+batch_size_valid: 60
+    batch_method: translation      (no sorting by target lengths)
+          device: cpu
+  is_conditional: True
+
+15 batches
+5 batches
+
+vocab_size: 1282
+
+train.txt
+              # words: 6681
+               # seqs: 300
+  avg/max/min lengths: 22/72/3
+
+src-train.txt
+              # words: 6081
+               # seqs: 300
+  avg/max/min lengths: 20/70/1
+
+Seq2Seq
+      # parameters: 522682
+        vocab_size: 1282
+               dim: 100
+          # layers: 2
+    is_conditional: 1
+     bidirectional: 0
+        use_bridge: 0
+     use_attention: 1
+
+Control
+            lr: 20.00
+          bptt: 35
+
+| epoch   1 |    20/   29 batches | lr 20.00 | ms/batch 123.99 | loss  7.62 | ppl  2038.20
+-----------------------------------------------------------------------------------------
+| end of epoch   1 | time:  4.16s | valid loss  5.94 | valid ppl   379.91 | valid sqxent   126.34
+-----------------------------------------------------------------------------------------
+| epoch   2 |    20/   29 batches | lr 20.00 | ms/batch 120.74 | loss  5.88 | ppl   358.63
+-----------------------------------------------------------------------------------------
+| end of epoch   2 | time:  4.10s | valid loss  5.57 | valid ppl   262.84 | valid sqxent   118.51
+-----------------------------------------------------------------------------------------
+| epoch   3 |    20/   29 batches | lr 20.00 | ms/batch 118.01 | loss  4.96 | ppl   142.99
+-----------------------------------------------------------------------------------------
+| end of epoch   3 | time:  3.96s | valid loss  5.51 | valid ppl   246.79 | valid sqxent   117.17
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+Exiting from training early
+=========================================================================================
+| End of training | final loss  5.51 | final ppl   246.79 | final sqxent   117.17
+=========================================================================================
+00:00:15
